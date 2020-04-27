@@ -5,11 +5,18 @@
 }
 body{
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: #e2e0e0;
+	background-color: white;
 }
-header.cabeceraPrincipal, nav.menuPrincipal{
-	background-color: rgb(148, 250, 46);
-	color: rgb(47, 83, 10);
+a{
+	color: #ECEC10;
+}
+p{
+	color: rgb(17, 16, 16);
+}
+header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrincipal, main.seccionPrincipal, aside.sponsor, footer.piePagina{
+	background-color: #B5B9C2;
+	border-style: solid;
+	color: #fff;
 	width: 90%;
 	margin: 0 auto;
 }
@@ -23,6 +30,15 @@ section.seccionCabecera{
 	display: inline-block;
 	text-align: right;
 }
+nav.menuSecundario a{
+	margin-right: 5px;
+}
+aside.buscador input{
+	background: #92AFF1; 
+	border-style: ridge;
+	float: right;
+	color: white;
+}
 nav.menuPrincipal{
 	margin-top: 2px;
 }
@@ -33,4 +49,23 @@ nav.menuPrincipal div{
 section.galeriaPrincipal{
 	margin-top: 2px;
 	height: 450px;
+	text-align: center;
+}
+main.seccionPrincipal{
+	height: 150px;
+	column-count: 2;
+}
+section.noticias{
+	height: 95%;
+	margin: 2px 2px;
+  }
+aside.sponsor{
+	text-align: center;
+	height: 50px;
+	column-count: 5;
+}
+footer.piePagina{
+	margin-top: 5px;
+	text-align: center;
+	height: 20px;
 }
