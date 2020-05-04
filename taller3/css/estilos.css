@@ -2,11 +2,20 @@
     padding: 0;
     margin: 0;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #e2e0e0;
 }
-header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrinicpal,aside.sponsor,main,footer.piePagina{
+header.cabeceraPrincipal, nav.menuPrincipal, section.galeriaPrinicpal, aside.sponsor, main, footer.piePagina{
     background-color: rgb(148, 250, 46);
     color: rgb(47, 83, 10);
     width: 90%;
@@ -44,7 +53,7 @@ section.seccionCabecera{
 .seccionCabecera .barra-busqueda{
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 .seccionCabecera .barra-busqueda input{
@@ -170,16 +179,68 @@ section.noticias{
 
 
 aside.sponsor{
-    text-align: center;
+    background-color: #ffffff;
+    width: 90%;
+    margin-top: 10px;
 }
-section.sponsorItem{
-    padding: 2em 1em;
-    width: 20%;
-    display: inline-block;
-    background-color: #0b361f;
+
+.sponsor-item {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  align-items: center;
 }
+
+
+.caja {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contenedor2 {
+  padding: 0 16px;
+}
+
+.contenedor2::after, .sponsor::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titulo {
+  color: grey;
+}
+
+.btn-sponsor {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn-sponsor:hover {
+  background-color: #555;
+}
+
+
+@media screen and (max-width: 650px) {
+  .sponsor-item {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
 footer.piePagina{
     text-align: right;
+    background-color: black;
+    color: white;
 }
 footer.piePagina h5{
     padding: 1em 2em;
